@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Café Serenity - The perfect place to enjoy quality coffee and a comfortable atmosphere"
+    />
+    <meta name="keywords" content="cafe, coffee, food, drinks, restaurant" />
+    <title>Café Serenity - The Best Coffee Place in Town</title>
+    <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="css/vendor/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Material Design Icons -->
+    <link
+      rel="stylesheet"
+      href="css/vendor/material-symbols-local.css"
+    />
+
+    <!-- Google Fonts -->
+    <link
+      href="css/vendor/google-fonts-local.css"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="css/vendor/font-awesome-local.css"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <!-- ===== PRELOADER ===== -->
+    <div class="preloader" id="preloader">
+      <div class="preloader-content">
+        <div class="preloader-spinner"></div>
+        <div class="preloader-text">Café Serenity</div>
+        <div class="preloader-subtitle">
+          Loading the best coffee experience...
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== NAVIGATION ===== -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#home">Café Serenity</a>
+        <div class="navbar-hours d-none d-lg-flex">
+          <span class="material-symbols-outlined">schedule</span>
+          <span>07:00 - 20:00</span>
+        </div>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">Story</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="javascript:void(0)"
+                role="button"
+                data-bs-toggle="dropdown"
+              >
+                Menu & Gallery
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="menu.html">Full Menu</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#menu">Our Menu</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#gallery">Gallery</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#reservation">Reservation</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#testimonials">Reviews</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ===== HERO SECTION ===== -->
+    <section class="hero-section" id="home">
+      <div class="hero-content">
+        <div class="hero-hours">
+          <span class="material-symbols-outlined">schedule</span>
+          <span>Open Daily: 07:00 - 20:00</span>
+        </div>
+        <h1>Welcome to Café Serenity</h1>
+        <p>
+          Experience the perfect blend of comfort, quality coffee, and
+          exceptional service in our cozy café atmosphere.
+        </p>
+        <div class="hero-buttons">
+          <a href="#menu" class="btn-hero">Explore Menu</a>
+          <a href="#reservation" class="btn-hero btn-outline"
+            >Make Reservation</a
+          >
+        </div>
+      </div>
+      <div class="scroll-indicator">
+        <span class="material-symbols-outlined">keyboard_arrow_down</span>
+      </div>
+    </section>
+
+    <!-- ===== ABOUT SECTION ===== -->
+    <section class="about-section" id="about">
+      <div class="container">
+        <div class="about-content">
+          <div class="about-text">
+            <h2>Our Story</h2>
+            <p>
+              Founded in 2020, Café Serenity began as a dream to create a space
+              where people could escape the hustle and bustle of daily life and
+              find peace in a cup of perfectly brewed coffee.
+            </p>
+            <p>
+              Today, we continue to serve our community with the same passion
+              and dedication, offering not just coffee, but an experience that
+              nourishes both body and soul.
+            </p>
+            <div class="about-stats">
+              <div class="stat-item">
+                <span class="stat-number">5000</span>
+                <span class="stat-label">Happy Customers</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number">50</span>
+                <span class="stat-label">Coffee Varieties</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number">3</span>
+                <span class="stat-label">Years of Excellence</span>
+              </div>
+            </div>
+          </div>
+          <div class="about-image">
+                            <img src="images/cafe-interior-1.jpg" alt="Café Interior" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== MENU SECTION ===== -->
+    <section class="menu-section" id="menu">
+      <div class="container">
+        <h2 class="section-title">Our Menu</h2>
+
+        <!-- Signature Dish -->
+        <div class="signature-dish">
+          <div class="signature-content">
+            <h3>Chef's Special</h3>
+            <h4>Artisan Coffee Blend</h4>
+            <p>
+              Our signature coffee blend, carefully crafted from the finest
+              beans sourced from around the world. Each cup tells a story of
+              tradition and innovation.
+            </p>
+            <div class="signature-price">$8.50</div>
+            <a href="#reservation" class="btn-signature">Order Now</a>
+          </div>
+          <div class="signature-image">
+                            <img src="images/artisan-coffee.jpg" alt="Artisan Coffee" />
+          </div>
+        </div>
+
+        <!-- Menu Categories -->
+        <div class="menu-categories">
+          <button class="category-btn active" data-category="all">All</button>
+          <button class="category-btn" data-category="coffee">Coffee</button>
+          <button class="category-btn" data-category="tea">Tea</button>
+          <button class="category-btn" data-category="food">Food</button>
+          <button class="category-btn" data-category="desserts">
+            Desserts
+          </button>
+        </div>
+
+        <!-- Menu Items -->
+        <div class="row">
+          <div class="col-lg-4 col-md-6 menu-item" data-category="coffee">
+            <div class="menu-card">
+                              <img src="images/espresso.jpg" alt="Espresso" />
+              <div class="menu-card-body">
+                <h4 class="menu-card-title">Espresso</h4>
+                <p class="menu-card-text">
+                  Rich and bold single shot of espresso, perfect for coffee
+                  purists.
+                </p>
+                <div class="menu-card-footer">
+                  <span class="menu-price">$3.50</span>
+                  <span class="menu-badge">Popular</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 menu-item" data-category="coffee">
+            <div class="menu-card">
+                              <img src="images/cafe-latte.jpg" alt="Café Latte" />
+              <div class="menu-card-body">
+                <h4 class="menu-card-title">Café Latte</h4>
+                <p class="menu-card-text">
+                  Smooth espresso with steamed milk and a light layer of foam.
+                </p>
+                <div class="menu-card-footer">
+                  <span class="menu-price">$5.00</span>
+                  <span class="menu-badge">Best Seller</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 menu-item" data-category="coffee">
+            <div class="menu-card">
+                              <img src="images/cappuccino.jpg" alt="Cappuccino" />
+              <div class="menu-card-body">
+                <h4 class="menu-card-title">Cappuccino</h4>
+                <p class="menu-card-text">
+                  Equal parts espresso, steamed milk, and milk foam.
+                </p>
+                <div class="menu-card-footer">
+                  <span class="menu-price">$4.50</span>
+                  <span class="menu-badge">Classic</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 menu-item" data-category="food">
+            <div class="menu-card">
+                              <img src="images/avocado-toast.jpg" alt="Avocado Toast" />
+              <div class="menu-card-body">
+                <h4 class="menu-card-title">Avocado Toast</h4>
+                <p class="menu-card-text">
+                  Fresh avocado on artisan bread with herbs and sea salt.
+                </p>
+                <div class="menu-card-footer">
+                  <span class="menu-price">$12.00</span>
+                  <span class="menu-badge">Healthy</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 menu-item" data-category="desserts">
+            <div class="menu-card">
+                              <img src="images/tiramisu.jpg" alt="Tiramisu" />
+              <div class="menu-card-body">
+                <h4 class="menu-card-title">Tiramisu</h4>
+                <p class="menu-card-text">
+                  Classic Italian dessert with coffee-soaked ladyfingers.
+                </p>
+                <div class="menu-card-footer">
+                  <span class="menu-price">$8.00</span>
+                  <span class="menu-badge">Sweet</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 menu-item" data-category="tea">
+            <div class="menu-card">
+                              <img src="images/green-tea.jpg" alt="Green Tea" />
+              <div class="menu-card-body">
+                <h4 class="menu-card-title">Green Tea</h4>
+                <p class="menu-card-text">
+                  Premium Japanese green tea, served hot or iced.
+                </p>
+                <div class="menu-card-footer">
+                  <span class="menu-price">$4.00</span>
+                  <span class="menu-badge">Organic</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-full-link">
+          <a href="menu.html" class="btn-menu-full">
+            <span class="material-symbols-outlined">menu_book</span>
+            View Full Menu
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== EVENTS SECTION ===== -->
+    <section class="events-section" id="events">
+      <div class="container">
+        <h2 class="section-title">Upcoming Events</h2>
+        <div class="row">
+          <div class="col-lg-4 col-md-6">
+            <div class="event-card">
+              <div class="event-image">
+                <img src="images/coffee-art-workshop.jpg" alt="Coffee Art Workshop" />
+              </div>
+              <div class="event-content">
+                <h4>Coffee Art Workshop</h4>
+                <p>
+                  Learn the art of latte art from our expert baristas. Perfect
+                  for coffee enthusiasts!
+                </p>
+                <span class="event-badge">This Weekend</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="event-card">
+              <div class="event-image">
+                <img src="images/live-music-night.jpg" alt="Live Music Night" />
+              </div>
+              <div class="event-content">
+                <h4>Live Music Night</h4>
+                <p>
+                  Enjoy live acoustic music while sipping your favorite coffee.
+                  Every Friday night.
+                </p>
+                <span class="event-badge">Weekly</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="event-card">
+              <div class="event-image">
+                <img src="images/coffee-tasting.jpg" alt="Coffee Tasting" />
+              </div>
+              <div class="event-content">
+                <h4>Coffee Tasting Session</h4>
+                <p>
+                  Discover different coffee origins and flavors in our guided
+                  tasting sessions.
+                </p>
+                <span class="event-badge">Monthly</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== GALLERY SECTION ===== -->
+    <section class="gallery-section" id="gallery">
+      <div class="container">
+        <h2 class="section-title">Gallery</h2>
+        <div class="gallery-grid">
+          <div class="gallery-item">
+                            <img src="images/cafe-interior-2.jpg" alt="Café Interior" />
+          </div>
+          <div class="gallery-item">
+                            <img src="images/coffee-pour.jpg" alt="Coffee Pour" />
+          </div>
+          <div class="gallery-item">
+                            <img src="images/cafe-interior-3.jpg" alt="Café Interior" />
+          </div>
+          <div class="gallery-item">
+                            <img src="images/coffee-cup.jpg" alt="Coffee Cup" />
+          </div>
+          <div class="gallery-item">
+                            <img src="images/cafe-interior-4.jpg" alt="Café Interior" />
+          </div>
+          <div class="gallery-item">
+                            <img src="images/macchiato.jpg" alt="Macchiato" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== RESERVATION SECTION ===== -->
+    <section class="reservation-section" id="reservation">
+      <div class="container">
+        <h2 class="section-title">Make a Reservation</h2>
+        <p class="section-subtitle">
+          Book your table and enjoy a memorable dining experience
+        </p>
+
+        <div class="reservation-form-container">
+          <form class="reservation-form" id="reservationForm">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="name">Full Name *</label>
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="John Doe"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="phone">Phone Number *</label>
+                  <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    placeholder="(+62) 123-4567-789"
+                    required
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="email">Email Address</label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="example@domain.com"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="guests">Number of Guests *</label>
+                  <select id="guests" name="guests" required>
+                    <option value="">Select guests</option>
+                    <option value="1">1 Person</option>
+                    <option value="2">2 People</option>
+                    <option value="3">3 People</option>
+                    <option value="4">4 People</option>
+                    <option value="5">5 People</option>
+                    <option value="6">6+ People</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="date">Date *</label>
+                  <input type="date" id="date" name="date" required />
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="time">Time *</label>
+                  <select id="time" name="time" required>
+                    <option value="">Select time</option>
+                    <option value="07:00">07:00</option>
+                    <option value="08:00">08:00</option>
+                    <option value="09:00">09:00</option>
+                    <option value="10:00">10:00</option>
+                    <option value="11:00">11:00</option>
+                    <option value="12:00">12:00</option>
+                    <option value="13:00">13:00</option>
+                    <option value="14:00">14:00</option>
+                    <option value="15:00">15:00</option>
+                    <option value="16:00">16:00</option>
+                    <option value="17:00">17:00</option>
+                    <option value="18:00">18:00</option>
+                    <option value="19:00">19:00</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="special-requests">Special Requests</label>
+              <textarea
+                id="special-requests"
+                name="special-requests"
+                rows="3"
+                placeholder="Any special requests or dietary requirements?"
+              ></textarea>
+            </div>
+            <div class="form-group">
+              <label class="checkbox-label">
+                <input type="checkbox" id="terms" name="terms" required />
+                <span class="checkmark"></span>
+                I agree to the
+                <button
+                  type="button"
+                  class="btn-terms-link"
+                  onclick="openTermsModal()"
+                >
+                  <span class="material-symbols-outlined">gavel</span>
+                  Terms & Conditions
+                </button>
+              </label>
+            </div>
+            <div class="form-actions">
+              <button type="submit" class="btn-reservation-submit">
+                <span class="material-symbols-outlined">send</span>
+                Book Reservation
+              </button>
+            </div>
+          </form>
+        </div>
+
+        <div class="reservation-info">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="info-card">
+                <span class="material-symbols-outlined">schedule</span>
+                <h4>Opening Hours</h4>
+                <p>Monday - Sunday<br />07:00 - 20:00</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="info-card">
+                <span class="material-symbols-outlined">phone</span>
+                <h4>Contact Us</h4>
+                <p>+1 (555) 123-4567<br />info@cafeserenity.com</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="info-card">
+                <span class="material-symbols-outlined">location_on</span>
+                <h4>Visit Us</h4>
+                <p>123 Coffee Street<br />Downtown, City 12345</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== TESTIMONIALS SECTION ===== -->
+    <section class="testimonials-section" id="testimonials">
+      <div class="container">
+        <h2 class="section-title">What Our Customers Say</h2>
+        <div class="row">
+          <div class="col-lg-4 col-md-6">
+            <div class="testimonial-card">
+              <div class="testimonial-rating">
+                <span class="material-symbols-outlined">star</span>
+                <span class="material-symbols-outlined">star</span>
+                <span class="material-symbols-outlined">star</span>
+                <span class="material-symbols-outlined">star</span>
+                <span class="material-symbols-outlined">star</span>
+              </div>
+              <p>
+                "The best coffee I've ever had! The atmosphere is so relaxing
+                and the staff is incredibly friendly."
+              </p>
+              <div class="testimonial-author">
+                <strong>Sarah Johnson</strong>
+                <span>Regular Customer</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="testimonial-card">
+              <div class="testimonial-rating">
+                <span class="material-symbols-outlined">star</span>
+                <span class="material-symbols-outlined">star</span>
+                <span class="material-symbols-outlined">star</span>
+                <span class="material-symbols-outlined">star</span>
+                <span class="material-symbols-outlined">star</span>
+              </div>
+              <p>
+                "Perfect place to work remotely. Great coffee, fast WiFi, and a
+                peaceful environment."
+              </p>
+              <div class="testimonial-author">
+                <strong>Michael Chen</strong>
+                <span>Remote Worker</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="testimonial-card">
+              <div class="testimonial-rating">
+                <span class="material-symbols-outlined">star</span>
+                <span class="material-symbols-outlined">star</span>
+                <span class="material-symbols-outlined">star</span>
+                <span class="material-symbols-outlined">star</span>
+                <span class="material-symbols-outlined">star</span>
+              </div>
+              <p>
+                "Amazing food and coffee! I love their avocado toast and the
+                coffee is always perfect."
+              </p>
+              <div class="testimonial-author">
+                <strong>Emily Rodriguez</strong>
+                <span>Food Blogger</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT SECTION ===== -->
+    <section class="contact-section" id="contact">
+      <div class="container">
+        <h2 class="section-title">Contact Us</h2>
+        <div class="row g-4">
+          <div class="col-lg-6 col-md-12">
+            <div class="contact-info">
+              <h3>Get in Touch</h3>
+              <div class="contact-item">
+                <span class="material-symbols-outlined">location_on</span>
+                <span>123 Coffee Street, Downtown, City 12345</span>
+              </div>
+              <div class="contact-item">
+                <span class="material-symbols-outlined">phone</span>
+                <span>+1 (555) 123-4567</span>
+              </div>
+              <div class="contact-item">
+                <span class="material-symbols-outlined">email</span>
+                <span>info@cafeserenity.com</span>
+              </div>
+              <div class="contact-item">
+                <span class="material-symbols-outlined">schedule</span>
+                <span>Monday - Sunday: 07:00 - 20:00</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-12">
+            <div class="contact-map">
+              <h3>Our Location</h3>
+              <div class="map-container">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.2219901290355!2d-74.00369368400567!3d40.71312937933185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a23e28c1191%3A0x49f75d3281df052a!2s150%20Park%20Row%2C%20New%20York%2C%20NY%2010007%2C%20USA!5e0!3m2!1sen!2sid!4v1640995200000!5m2!1sen!2sid"
+                  width="100%"
+                  height="350"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                  title="Café Serenity Location"
+                >
+                </iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-brand">
+            <h3>Café Serenity</h3>
+            <p>Where every cup tells a story</p>
+          </div>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2024 Café Serenity. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- ===== TERMS MODAL ===== -->
+    <div class="terms-modal" id="termsModal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="material-symbols-outlined">gavel</span>
+          <h3>Terms & Conditions</h3>
+        </div>
+        <div class="modal-body">
+          <div class="terms-content">
+            <div class="terms-section">
+              <h4>
+                <span class="material-symbols-outlined">restaurant</span>
+                Reservation Policy
+              </h4>
+              <ul>
+                <li>
+                  Reservations are held for 15 minutes past the scheduled time
+                </li>
+                <li>Cancellations must be made at least 2 hours in advance</li>
+                <li>
+                  Large groups (6+ people) require 24-hour notice for
+                  cancellation
+                </li>
+                <li>
+                  We reserve the right to modify or cancel reservations due to
+                  unforeseen circumstances
+                </li>
+              </ul>
+            </div>
+            <div class="terms-section">
+              <h4>
+                <span class="material-symbols-outlined">security</span>
+                Privacy & Data
+              </h4>
+              <ul>
+                <li>
+                  Your personal information is collected solely for reservation
+                  purposes
+                </li>
+                <li>We do not share your information with third parties</li>
+                <li>You may request deletion of your data at any time</li>
+                <li>
+                  We use industry-standard security measures to protect your
+                  information
+                </li>
+              </ul>
+            </div>
+            <div class="terms-section">
+              <h4>
+                <span class="material-symbols-outlined">local_dining</span>
+                Dining Guidelines
+              </h4>
+              <ul>
+                <li>Please arrive on time for your reservation</li>
+                <li>Dress code is smart casual</li>
+                <li>Outside food and beverages are not permitted</li>
+                <li>We accommodate dietary restrictions with advance notice</li>
+              </ul>
+            </div>
+            <div class="terms-section">
+              <h4>
+                <span class="material-symbols-outlined">payment</span>
+                Payment & Pricing
+              </h4>
+              <ul>
+                <li>All prices are subject to applicable taxes</li>
+                <li>We accept cash and all major credit cards</li>
+                <li>Gratuity is not included in menu prices</li>
+                <li>Prices may change without prior notice</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button class="btn-close-terms" onclick="closeTermsModal()">
+            <span class="material-symbols-outlined">check</span>
+            I Understand
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== SCROLL TO TOP BUTTON ===== -->
+    <button class="scroll-to-top" id="scrollToTop" aria-label="Scroll to top">
+      <span class="material-symbols-outlined">keyboard_arrow_up</span>
+    </button>
+
+    <!-- Bootstrap JS -->
+    <script src="js/vendor/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+  </body>
+</html>

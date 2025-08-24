@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Café Serenity Menu - Explore our delicious coffee, food, and beverages"
+    />
+    <title>Menu - Café Serenity</title>
+
+    <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="css/vendor/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Material Design Icons -->
+    <link
+      rel="stylesheet"
+      href="css/vendor/material-symbols-local.css"
+    />
+
+    <!-- Google Fonts -->
+    <link
+      href="css/vendor/google-fonts-local.css"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="css/vendor/font-awesome-local.css"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <!-- ===== PRELOADER ===== -->
+    <div class="preloader" id="preloader">
+      <div class="preloader-content">
+        <div class="preloader-spinner"></div>
+        <div class="preloader-text">Café Serenity</div>
+        <div class="preloader-subtitle">Loading our delicious menu...</div>
+      </div>
+    </div>
+
+    <!-- ===== NAVIGATION ===== -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="index.html#home">Café Serenity</a>
+        <div class="navbar-hours d-none d-lg-flex">
+          <span class="material-symbols-outlined">schedule</span>
+          <span>07:00 - 20:00</span>
+        </div>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#about">Story</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="javascript:void(0)"
+                role="button"
+                data-bs-toggle="dropdown"
+              >
+                Menu & Gallery
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="index.html#menu">Our Menu</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="index.html#gallery">Gallery</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#reservation">Reservation</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#testimonials">Reviews</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ===== MENU HEADER ===== -->
+    <section class="hero-section" style="height: 60vh; padding-top: 100px">
+      <div class="hero-content">
+        <h1>Our Complete Menu</h1>
+        <p>
+          Discover our carefully curated selection of coffee, food, and
+          beverages
+        </p>
+      </div>
+    </section>
+
+    <!-- ===== MENU CATEGORIES ===== -->
+    <section class="menu-section" style="padding-top: 80px">
+      <div class="container">
+        <div class="menu-categories">
+          <button class="category-btn active" data-category="all">All</button>
+          <button class="category-btn" data-category="coffee">Coffee</button>
+          <button class="category-btn" data-category="tea">Tea</button>
+          <button class="category-btn" data-category="food">Food</button>
+          <button class="category-btn" data-category="desserts">
+            Desserts
+          </button>
+          <button class="category-btn" data-category="drinks">Drinks</button>
+        </div>
+
+        <!-- Coffee Section -->
+        <div class="menu-category-content" id="coffee">
+          <h3 class="category-title">Coffee</h3>
+          <div class="row">
+            <div class="col-lg-4 col-md-6 menu-item" data-category="coffee">
+              <div class="menu-card">
+                <img
+                  src="images/espresso.jpg"
+                  alt="Espresso"
+                />
+                <div class="menu-card-body">
+                  <h4 class="menu-card-title">Espresso</h4>
+                  <p class="menu-card-text">
+                    Rich and bold single shot of espresso, perfect for coffee
+                    purists.
+                  </p>
+                  <div class="menu-card-footer">
+                    <span class="menu-price">$3.50</span>
+                    <span class="menu-badge">Popular</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 menu-item" data-category="coffee">
+              <div class="menu-card">
+                <img
+                  src="images/cafe-latte.jpg"
+                  alt="Café Latte"
+                />
+                <div class="menu-card-body">
+                  <h4 class="menu-card-title">Café Latte</h4>
+                  <p class="menu-card-text">
+                    Smooth espresso with steamed milk and a light layer of foam.
+                  </p>
+                  <div class="menu-card-footer">
+                    <span class="menu-price">$5.00</span>
+                    <span class="menu-badge">Best Seller</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 menu-item" data-category="coffee">
+              <div class="menu-card">
+                <img
+                  src="images/cappuccino.jpg"
+                  alt="Cappuccino"
+                />
+                <div class="menu-card-body">
+                  <h4 class="menu-card-title">Cappuccino</h4>
+                  <p class="menu-card-text">
+                    Equal parts espresso, steamed milk, and milk foam.
+                  </p>
+                  <div class="menu-card-footer">
+                    <span class="menu-price">$4.50</span>
+                    <span class="menu-badge">Classic</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 menu-item" data-category="coffee">
+              <div class="menu-card">
+                <img
+                  src="images/menu-item-1.jpg"
+                  alt="Macchiato"
+                />
+                <div class="menu-card-body">
+                  <h4 class="menu-card-title">Macchiato</h4>
+                  <p class="menu-card-text">
+                    Espresso with a small amount of steamed milk and foam.
+                  </p>
+                  <div class="menu-card-footer">
+                    <span class="menu-price">$4.00</span>
+                    <span class="menu-badge">Strong</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 menu-item" data-category="coffee">
+              <div class="menu-card">
+                <img
+                  src="images/menu-item-2.jpg"
+                  alt="Mocha"
+                />
+                <div class="menu-card-body">
+                  <h4 class="menu-card-title">Mocha</h4>
+                  <p class="menu-card-text">
+                    Espresso with chocolate syrup and steamed milk.
+                  </p>
+                  <div class="menu-card-footer">
+                    <span class="menu-price">$5.50</span>
+                    <span class="menu-badge">Sweet</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 menu-item" data-category="coffee">
+              <div class="menu-card">
+                <img
+                  src="images/menu-item-3.jpg"
+                  alt="Americano"
+                />
+                <div class="menu-card-body">
+                  <h4 class="menu-card-title">Americano</h4>
+                  <p class="menu-card-text">
+                    Espresso with hot water for a milder coffee experience.
+                  </p>
+                  <div class="menu-card-footer">
+                    <span class="menu-price">$3.00</span>
+                    <span class="menu-badge">Light</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tea Section -->
+        <div class="menu-category-content" id="tea">
+          <h3 class="category-title">Tea</h3>
+          <div class="row">
+            <div class="col-lg-4 col-md-6 menu-item" data-category="tea">
+              <div class="menu-card">
+                <img
+                  src="images/green-tea.jpg"
+                  alt="Green Tea"
+                />
+                <div class="menu-card-body">
+                  <h4 class="menu-card-title">Green Tea</h4>
+                  <p class="menu-card-text">
+                    Premium Japanese green tea, served hot or iced.
+                  </p>
+                  <div class="menu-card-footer">
+                    <span class="menu-price">$4.00</span>
+                    <span class="menu-badge">Organic</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 menu-item" data-category="tea">
+              <div class="menu-card">
+                <img
+                  src="images/menu-item-4.jpg"
+                  alt="Earl Grey"
+                />
+                <div class="menu-card-body">
+                  <h4 class="menu-card-title">Earl Grey</h4>
+                  <p class="menu-card-text">
+                    Classic black tea with bergamot oil for a citrusy flavor.
+                  </p>
+                  <div class="menu-card-footer">
+                    <span class="menu-price">$4.00</span>
+                    <span class="menu-badge">Classic</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 menu-item" data-category="tea">
+              <div class="menu-card">
+                <img
+                  src="images/menu-item-5.jpg"
+                  alt="Chai Latte"
+                />
+                <div class="menu-card-body">
+                  <h4 class="menu-card-title">Chai Latte</h4>
+                  <p class="menu-card-text">
+                    Spiced black tea with steamed milk and honey.
+                  </p>
+                  <div class="menu-card-footer">
+                    <span class="menu-price">$5.00</span>
+                    <span class="menu-badge">Spiced</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Food Section -->
+        <div class="menu-category-content" id="food">
+          <h3 class="category-title">Food</h3>
+          <div class="row">
+            <div class="col-lg-4 col-md-6 menu-item" data-category="food">
+              <div class="menu-card">
+                <img
+                  src="images/avocado-toast.jpg"
+                  alt="Avocado Toast"
+                />
+                <div class="menu-card-body">
+                  <h4 class="menu-card-title">Avocado Toast</h4>
+                  <p class="menu-card-text">
+                    Fresh avocado on artisan bread with herbs and sea salt.
+                  </p>
+                  <div class="menu-card-footer">
+                    <span class="menu-price">$12.00</span>
+                    <span class="menu-badge">Healthy</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 menu-item" data-category="food">
+              <div class="menu-card">
+                <img
+                  src="images/menu-item-6.jpg"
+                  alt="Eggs Benedict"
+                />
+                <div class="menu-card-body">
+                  <h4 class="menu-card-title">Eggs Benedict</h4>
+                  <p class="menu-card-text">
+                    Poached eggs on English muffin with hollandaise sauce.
+                  </p>
+                  <div class="menu-card-footer">
+                    <span class="menu-price">$15.00</span>
+                    <span class="menu-badge">Breakfast</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 menu-item" data-category="food">
+              <div class="menu-card">
+                <img
+                  src="images/menu-item-7.jpg"
+                  alt="Caesar Salad"
+                />
+                <div class="menu-card-body">
+                  <h4 class="menu-card-title">Caesar Salad</h4>
+                  <p class="menu-card-text">
+                    Fresh romaine lettuce with parmesan and croutons.
+                  </p>
+                  <div class="menu-card-footer">
+                    <span class="menu-price">$13.00</span>
+                    <span class="menu-badge">Fresh</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Desserts Section -->
+        <div class="menu-category-content" id="desserts">
+          <h3 class="category-title">Desserts</h3>
+          <div class="row">
+            <div class="col-lg-4 col-md-6 menu-item" data-category="desserts">
+              <div class="menu-card">
+                <img
+                  src="images/tiramisu.jpg"
+                  alt="Tiramisu"
+                />
+                <div class="menu-card-body">
+                  <h4 class="menu-card-title">Tiramisu</h4>
+                  <p class="menu-card-text">
+                    Classic Italian dessert with coffee-soaked ladyfingers.
+                  </p>
+                  <div class="menu-card-footer">
+                    <span class="menu-price">$8.00</span>
+                    <span class="menu-badge">Sweet</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 menu-item" data-category="desserts">
+              <div class="menu-card">
+                <img
+                  src="images/menu-item-8.jpg"
+                  alt="Chocolate Cake"
+                />
+                <div class="menu-card-body">
+                  <h4 class="menu-card-title">Chocolate Cake</h4>
+                  <p class="menu-card-text">
+                    Rich chocolate cake with ganache and fresh berries.
+                  </p>
+                  <div class="menu-card-footer">
+                    <span class="menu-price">$7.00</span>
+                    <span class="menu-badge">Rich</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 menu-item" data-category="desserts">
+              <div class="menu-card">
+                <img
+                  src="images/menu-item-9.jpg"
+                  alt="Cheesecake"
+                />
+                <div class="menu-card-body">
+                  <h4 class="menu-card-title">New York Cheesecake</h4>
+                  <p class="menu-card-text">
+                    Creamy cheesecake with berry compote.
+                  </p>
+                  <div class="menu-card-footer">
+                    <span class="menu-price">$8.50</span>
+                    <span class="menu-badge">Creamy</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Drinks Section -->
+        <div class="menu-category-content" id="drinks">
+          <h3 class="category-title">Drinks</h3>
+          <div class="row">
+            <div class="col-lg-4 col-md-6 menu-item" data-category="drinks">
+              <div class="menu-card">
+                <img
+                  src="images/menu-item-10.jpg"
+                  alt="Fresh Juice"
+                />
+                <div class="menu-card-body">
+                  <h4 class="menu-card-title">Fresh Orange Juice</h4>
+                  <p class="menu-card-text">
+                    Freshly squeezed orange juice, served cold.
+                  </p>
+                  <div class="menu-card-footer">
+                    <span class="menu-price">$5.00</span>
+                    <span class="menu-badge">Fresh</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 menu-item" data-category="drinks">
+              <div class="menu-card">
+                <img
+                  src="images/menu-item-11.jpg"
+                  alt="Smoothie"
+                />
+                <div class="menu-card-body">
+                  <h4 class="menu-card-title">Berry Smoothie</h4>
+                  <p class="menu-card-text">
+                    Mixed berries with yogurt and honey.
+                  </p>
+                  <div class="menu-card-footer">
+                    <span class="menu-price">$6.50</span>
+                    <span class="menu-badge">Healthy</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 menu-item" data-category="drinks">
+              <div class="menu-card">
+                <img
+                  src="images/menu-item-12.jpg"
+                  alt="Lemonade"
+                />
+                <div class="menu-card-body">
+                  <h4 class="menu-card-title">Fresh Lemonade</h4>
+                  <p class="menu-card-text">
+                    Homemade lemonade with fresh lemons and mint.
+                  </p>
+                  <div class="menu-card-footer">
+                    <span class="menu-price">$4.50</span>
+                    <span class="menu-badge">Refreshing</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-brand">
+            <h3>Café Serenity</h3>
+            <p>Where every cup tells a story</p>
+          </div>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2024 Café Serenity. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="js/vendor/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
