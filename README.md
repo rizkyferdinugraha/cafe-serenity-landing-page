@@ -85,6 +85,9 @@ cafe-serenity/
 
 ## 🚀 Cara Menjalankan Proyek
 
+### 🌐 Live Preview
+**Demo Online**: [Café Serenity Live Preview](https://serenity-coffe.netlify.app/)
+
 ### Prerequisites
 - Web browser modern (Chrome, Firefox, Safari, Edge)
 - Local web server (opsional, untuk development)
